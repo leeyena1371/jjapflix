@@ -1,0 +1,16 @@
+spring:
+  profiles:
+    active: dev
+    include: common
+
+---
+spring:
+  config:
+    activate:
+      on-profile: dev
+
+  datasource:
+    driverClassName: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/jjapflix
+    username: root
+    password: qwer1234
